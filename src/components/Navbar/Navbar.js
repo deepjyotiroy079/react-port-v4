@@ -12,7 +12,7 @@ const Navbar = () => {
   return (
     <nav className="relative container mx-auto">
       <div className="flex items-center justify-between">
-        <div className="flex space-x-4">
+        <div className="flex space-x-6 ">
           {/* <a href="" className="hover:text-violet-400">
             <User size={size} />
           </a> */}
@@ -32,9 +32,9 @@ const Navbar = () => {
             <Mail size={size} />
           </NavLink> */}
         </div>
-        <div>
-          <Moon size={size} className={({ isActive }) => (isActive ? activeLink : normalLink)}/>
-        </div>
+        {/* <div>
+          <Moon size={size} onClick={() => setDarkMode(!darkMode)}/>
+        </div> */}
         {/* Hamburger icon */}
       </div>
     </nav>

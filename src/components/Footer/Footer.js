@@ -37,14 +37,14 @@ const Footer = () => {
           </a>
           {/* </div> */}
         </div>
-        <div className="mb-2 flex space-x-2 text-md font-normal text-gray-500 dark:text-gray-400">
+        <div className="mb-2 flex space-x-2 text-sm font-medium text-gray-500 dark:text-gray-400">
           <div>Deepjyoti Roy</div>
           <div>{` • `}</div>
           <div>{`${new Date().getFullYear()}`}</div>
           <div>{` • `}</div>
           <div>Made with </div>
-          <a href="/"><SiReact className="text-sky-300" size={16}/></a>
-          <a href="/"><SiTailwindcss className="text-sky-300" size={16}/></a>
+          <a href="/"><SiReact className="text-sky-300" size={size}/></a>
+          <a href="/"><SiTailwindcss className="text-sky-300" size={size}/></a>
         </div>
         
       </div>

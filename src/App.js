@@ -16,10 +16,10 @@ import {
   DownloadCloud,
 } from "react-feather";
 import Loader from "./components/Loader/Loader";
-import Navbar from "./components/Navbar/Navbar";
+// import Navbar from "./components/Navbar/Navbar";
 import Separator from "./components/Separator/Separator";
 function App() {
-  const [isNavOpen, setIsNavOpen] = useState(false);
+  // const [isNavOpen, setIsNavOpen] = useState(false);
   // const [darkMode, setDarkMode] = useState(false);
   const [loading, setLoading] = useState(false);
   const size = 24;
@@ -111,12 +111,13 @@ function App() {
           <strong>frontend</strong> and <strong>backend</strong> web
           technologies to create *hobby* projects.
         </p>
-        {/* <!-- Light style tooltip --> */}
         <button
           type="button"
-          class="text-white flex items-center justify-between bg-violet-800 hover:bg-violet-400 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+          className="text-white bg-violet-800 hover:bg-violet-400 focus:ring-4 focus:outline-none focus:ring-violet-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-violet-600 dark:hover:bg-violet-700 dark:focus:ring-violet-800"
         >
-          Download Resume <DownloadCloud className="mx-2" size={size} />
+          <a href="#resumelink" className="flex items-center justify-between">
+            Download Resume <DownloadCloud className="mx-2" size={size} />
+          </a>
         </button>
       </div>
       {/* Social Icons */}
@@ -148,15 +149,16 @@ function App() {
               // console.log(project)
               // console.log(project.node.name)
 
-              <div className="rounded overflow-hidden shadow-lg hover:shadow-2xl hover:shadow-violet-400">
+              <div className="rounded overflow-hidden shadow-md hover:shadow-xl hover:shadow-violet-200">
                 <div className="px-6 py-4 space-y-4">
                   <div className="font-bold text-xl mb-2">
                     <a
-                      className="hover:underline hover:text-violet-400"
+                      className="hover:underline hover:text-violet-400 flex items-center justify-between"
                       href={project.node.url}
                       target="_blank"
                     >
                       {project.node.name}
+                      <ExternalLink size={20} />
                     </a>
                   </div>
                   <p className="text-gray-700 text-base">
