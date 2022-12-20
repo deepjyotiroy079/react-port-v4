@@ -1,14 +1,19 @@
-import React from 'react'
-import Navbar from '../Navbar/Navbar';
+import React from "react";
+import Footer from "../Footer/Footer";
+import Navbar from "../Navbar/Navbar";
 
 const Layout = ({ children }) => {
   return (
-    <div className='content'>
-        <Navbar />
-        { children }
-        
-    </div>
+    <>
+      <section className="m-4">
+        <div className="container max-w-[900px] items-center px-2 mx-auto mt-12 space-y-10 md:space-y-12">
+          <Navbar />
+          { children }
+          <Footer />
+        </div>
+      </section>
+    </>
   );
-}
+};
 
-export default Layout
+export default Layout;
