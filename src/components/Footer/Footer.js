@@ -16,7 +16,7 @@ import { SiReact, SiTailwindcss } from 'react-icons/si'
 const Footer = () => {
     const size = 20
   return (
-    <footer>
+    <footer className="mt-auto">
       <div className="mt-16 flex flex-col items-center">
         <div className="mb-3 flex space-x-4">
           {/* <div className="flex space-x-4"> */}

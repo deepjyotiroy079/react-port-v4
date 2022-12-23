@@ -1,6 +1,12 @@
 import React from "react";
-import { ExternalLink } from "react-feather";
-import { SiPython } from "react-icons/si";
+import { Database, ExternalLink, GitBranch } from "react-feather";
+import {
+  SiGit,
+  SiLinux,
+  SiNodedotjs,
+  SiPython,
+  SiSpotify,
+} from "react-icons/si";
 import Layout from "../layout/Layout";
 import Separator from "../Separator/Separator";
 
@@ -10,43 +16,112 @@ const About = () => {
       <h1 className="max-w-md text-4xl font-bold md:text-5xl text-left">
         About
       </h1>
-      {/* <div class="max-w-4xl mx-auto grid grid-cols-1 lg:max-w-5xl lg:gap-x-20 lg:grid-cols-2"> */}
-      <div class="max-w-4xl mx-auto grid grid-cols-1 lg:max-w-5xl lg:gap-x-20 lg:grid-cols-2">
-        <div class="relative p-3 col-start-1 row-start-1 flex flex-col-reverse rounded-lg bg-gradient-to-t from-black/75 via-black/0 sm:bg-none sm:row-start-2 sm:p-0 lg:row-start-1">
-          <h1 class="mt-1 text-lg font-semibold text-white sm:text-slate-900 md:text-2xl dark:sm:text-white">
+      <div className="container flex flex-col-reverse justify-center mx-auto sm:py-16 lg:py-4 lg:flex-row lg:justify-between">
+        <div className="flex flex-col justify-center lg:max-w-md xl:max-w-lg">
+          <p className="mt-8 text-lg sm:mb-12">
+            <strong>3 years</strong> of experience in IT
+            industry, mostly focused on{" "}
+            <strong>ETL development and data warehousing</strong>. Currently
+            working on <strong>SSIS, IICS, Microsoft SQL Server and Redshift</strong>. Previously
+            worked with <strong>Banking</strong> and <strong>Media/Entertainment</strong> Clients. Strong
+            education professional with a Bachelor's of Engineering degree
+            focused in Information Technology.
+          </p>
+          <SiSpotify size={24} className="mt-6 text-green-500" /> Now playing
+        </div>
+        <div className="flex items-center justify-center lg:mt-0 h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128">
+          <img
+            src="/profile.jpg"
+            alt="some image"
+            className="object-contain h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128"
+          />
+        </div>
+      </div>
+      {/* <div className="max-w-4xl space-y-10 mx-auto grid grid-cols-1 lg:max-w-5xl lg:gap-x-20 lg:grid-cols-2">
+        <div className="relative p-3 col-start-1 row-start-1 flex flex-col-reverse rounded-lg bg-gradient-to-t from-black/75 via-black/0 sm:bg-none sm:row-start-2 sm:p-0 lg:row-start-1">
+          <h1 className="mt-1 text-xl font-semibold text-white sm:text-slate-900 md:text-3xl dark:sm:text-white">
             Here's a little background...
           </h1>
         </div>
-        <div class="grid gap-4 col-start-1 col-end-3 row-start-1 sm:mb-6 sm:grid-cols-4 lg:gap-6 lg:col-start-2 lg:row-end-6 lg:row-span-6 lg:mb-0">
+        <div className="grid gap-4 col-start-1 col-end-3 row-start-1 sm:mb-6 sm:grid-cols-4 lg:gap-6 lg:col-start-2 lg:row-end-6 lg:row-span-6 lg:mb-0">
           <img
             src="/profile.jpg"
             alt="profile"
-            class="w-72 h-72 object-cover rounded-lg sm:col-span-2 lg:col-span-full"
+            className="w-72 h-72 object-cover rounded-lg sm:col-span-2 lg:col-span-full"
             loading="lazy"
           />
         </div>
-        <p class="mt-4 text-md leading-6 col-start-1 sm:col-span-2 lg:mt-2 lg:row-start-2 lg:col-span-1 dark:text-slate-500 font-normal">
-          Analyst at Deloitte India (Offices of the US). 3 years of experience
-          in IT industry, mostly focused on ETL development and data
-          warehousing. Currently working on SSIS, IICS, Microsoft SQL Server and
-          Redshift. Previously worked with Banking and Media/Entertainment
-          Clients. Strong education professional with a Bachelor's of
-          Engineering degree focused in Information Technology from Rajiv Gandhi
-          Proudyogiki Vishwavidhyalaya, Bhopal.
+        <p className="mt-4 text-md leading-6 col-start-1 sm:col-span-2 lg:mt-2 lg:row-start-2 lg:col-span-1 dark:text-slate-500 font-normal">
+          Analyst at <strong>Deloitte</strong>. 3 years of experience in IT
+          industry, mostly focused on{" "}
+          <strong>ETL development and data warehousing</strong>. Currently
+          working on SSIS, IICS, Microsoft SQL Server and Redshift. Previously
+          worked with Banking and Media/Entertainment Clients. Strong education
+          professional with a Bachelor's of Engineering degree focused in
+          Information Technology from Rajiv Gandhi Proudyogiki Vishwavidhyalaya,
+          Bhopal.
         </p>
-      </div>
+      </div> */}
+      {/* <section className=""></section> */}
+      
       <Separator />
-      <h1 class="mt-1 text-lg font-semibold md:text-2xl">
+      <h1 class="mt-1 text-xl font-semibold md:text-2xl">
         Skills and Abilities
       </h1>
-      <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-5">
-        <div className="flex items-center justify-between rounded overflow-hidden shadow-md hover:shadow-xl hover:shadow-violet-200">
-          <div className="px-4 py-2">Python</div>
-          <div className="px-4 pb-2">
-            <SiPython />
+      {/* <div class=> */}
+      <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-4 lg:grid-cols-4 xl:grid-cols-4 gap-5">
+        <div className="rounded overflow-hidden border-2">
+          <div className="px-8 py-4 space-y-4">
+            <div className="font-semibold text-lg">
+              <div className="hover:text-violet-400 flex items-center justify-between">
+                Python
+                <SiPython size={24} />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="rounded overflow-hidden border-2">
+          <div className="px-8 py-4 space-y-4">
+            <div className="font-semibold text-lg mb-2">
+              <div className="hover:text-violet-400 flex items-center justify-between">
+                SQL
+                <Database size={24} />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="rounded overflow-hidden border-2">
+          <div className="px-8 py-4 space-y-4">
+            <div className="font-semibold text-lg mb-2">
+              <div className="hover:text-violet-400 flex items-center justify-between">
+                GitHub
+                <SiGit size={24} />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="rounded overflow-hidden border-2">
+          <div className="px-8 py-4 space-y-4">
+            <div className="font-semibold text-lg mb-2">
+              <div className="hover:text-violet-400 flex items-center justify-between">
+                Nodejs
+                <SiNodedotjs size={24} />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="rounded overflow-hidden border-2">
+          <div className="px-8 py-4 space-y-4">
+            <div className="font-semibold text-lg mb-2">
+              <div className="hover:text-violet-400 flex items-center justify-between">
+                Linux
+                <SiLinux size={24} />
+              </div>
+            </div>
           </div>
         </div>
       </div>
+      {/* </div> */}
     </Layout>
   );
 };
