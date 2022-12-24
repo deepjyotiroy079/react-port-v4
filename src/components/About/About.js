@@ -1,14 +1,16 @@
 import React from "react";
-import { Database, ExternalLink, GitBranch } from "react-feather";
+import { Database } from "react-feather";
 import {
+  SiDocker,
   SiGit,
+  SiJava,
   SiLinux,
   SiNodedotjs,
   SiPython,
-  SiSpotify,
 } from "react-icons/si";
 import Layout from "../layout/Layout";
 import Separator from "../Separator/Separator";
+import SpotifyNowPlaying from "../Spotify/SpotifyNowPlaying";
 
 const About = () => {
   return (
@@ -18,22 +20,24 @@ const About = () => {
       </h1>
       <div className="container flex flex-col-reverse justify-center mx-auto sm:py-16 lg:py-4 lg:flex-row lg:justify-between">
         <div className="flex flex-col justify-center lg:max-w-md xl:max-w-lg">
-          <p className="mt-8 text-lg sm:mb-12">
-            <strong>3 years</strong> of experience in IT
-            industry, mostly focused on{" "}
-            <strong>ETL development and data warehousing</strong>. Currently
-            working on <strong>SSIS, IICS, Microsoft SQL Server and Redshift</strong>. Previously
-            worked with <strong>Banking</strong> and <strong>Media/Entertainment</strong> Clients. Strong
-            education professional with a Bachelor's of Engineering degree
-            focused in Information Technology.
+          <p className="mt-6 text-lg sm:mb-12">
+            <strong>3 years</strong> of experience in IT industry, mostly
+            focused on <strong>ETL development and data warehousing</strong>.
+            Currently working on{" "}
+            <strong>SSIS, IICS, Microsoft SQL Server and Redshift</strong>.
+            Previously worked with <strong>Banking</strong> and{" "}
+            <strong>Media/Entertainment</strong> Clients. Strong education
+            professional with a Bachelor's of Engineering degree focused in
+            Information Technology.
           </p>
-          <SiSpotify size={24} className="mt-6 text-green-500" /> Now playing
+          {/* <h3>What I've been Listening to...</h3> */}
+          <SpotifyNowPlaying />
         </div>
         <div className="flex items-center justify-center lg:mt-0 h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128">
           <img
             src="/profile.jpg"
-            alt="some image"
-            className="object-contain h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128"
+            alt=""
+            className="object-cover shadow-lg h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128"
           />
         </div>
       </div>
@@ -63,16 +67,15 @@ const About = () => {
         </p>
       </div> */}
       {/* <section className=""></section> */}
-      
       <Separator />
-      <h1 class="mt-1 text-xl font-semibold md:text-2xl">
-        Skills and Abilities
+      <h1 className="mt-1 text-xl font-semibold md:text-2xl">
+        Technologies I've worked on
       </h1>
       {/* <div class=> */}
       <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-4 lg:grid-cols-4 xl:grid-cols-4 gap-5">
         <div className="rounded overflow-hidden border-2">
           <div className="px-8 py-4 space-y-4">
-            <div className="font-semibold text-lg">
+            <div className="font-semibold text-md">
               <div className="hover:text-violet-400 flex items-center justify-between">
                 Python
                 <SiPython size={24} />
@@ -82,7 +85,7 @@ const About = () => {
         </div>
         <div className="rounded overflow-hidden border-2">
           <div className="px-8 py-4 space-y-4">
-            <div className="font-semibold text-lg mb-2">
+            <div className="font-semibold text-md mb-2">
               <div className="hover:text-violet-400 flex items-center justify-between">
                 SQL
                 <Database size={24} />
@@ -92,7 +95,7 @@ const About = () => {
         </div>
         <div className="rounded overflow-hidden border-2">
           <div className="px-8 py-4 space-y-4">
-            <div className="font-semibold text-lg mb-2">
+            <div className="font-semibold text-md mb-2">
               <div className="hover:text-violet-400 flex items-center justify-between">
                 GitHub
                 <SiGit size={24} />
@@ -102,7 +105,7 @@ const About = () => {
         </div>
         <div className="rounded overflow-hidden border-2">
           <div className="px-8 py-4 space-y-4">
-            <div className="font-semibold text-lg mb-2">
+            <div className="font-semibold text-md mb-2">
               <div className="hover:text-violet-400 flex items-center justify-between">
                 Nodejs
                 <SiNodedotjs size={24} />
@@ -112,7 +115,7 @@ const About = () => {
         </div>
         <div className="rounded overflow-hidden border-2">
           <div className="px-8 py-4 space-y-4">
-            <div className="font-semibold text-lg mb-2">
+            <div className="font-semibold text-md mb-2">
               <div className="hover:text-violet-400 flex items-center justify-between">
                 Linux
                 <SiLinux size={24} />
@@ -120,6 +123,27 @@ const About = () => {
             </div>
           </div>
         </div>
+        <div className="rounded overflow-hidden border-2">
+          <div className="px-8 py-4 space-y-4">
+            <div className="font-semibold text-md mb-2">
+              <div className="hover:text-violet-400 flex items-center justify-between">
+                Java
+                <SiJava size={24} />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="rounded overflow-hidden border-2">
+          <div className="px-8 py-4 space-y-4">
+            <div className="font-semibold text-md mb-2">
+              <div className="hover:text-violet-400 flex items-center justify-between">
+                Docker
+                <SiDocker size={24} />
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
       {/* </div> */}
     </Layout>

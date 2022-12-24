@@ -112,13 +112,15 @@ const Experience = () => {
                       <div>PCM</div>
                     </div>
                   </span>
-                  <time className="text-sm tracking-wide dark:text-gray-400">
-                    2014 - 2016
+                  <time className="text-xs tracking-wide dark:text-gray-400">
+                    <div className="mb-2 flex space-x-2 text-sm text-gray-500 dark:text-gray-400">
+                      <div>2014 - 2016</div>
+                    </div>
                   </time>
                   <span className="text-sm tracking-wider dark:text-gray-400">
                     Jabalpur, Madhya Pradesh, India
                   </span>
-                  <p className="mt-3">cource</p>
+                  {/* <p className="mt-3">cource</p> */}
                 </div>
               </div>
             </div>

@@ -156,6 +156,8 @@ function App() {
                       className="hover:underline hover:text-violet-400 flex items-center justify-between"
                       href={project.node.url}
                       target="_blank"
+                      key={project.node.name}
+                      rel='noopener noreferer'
                     >
                       {project.node.name}
                       <ExternalLink size={20} />
@@ -167,7 +169,7 @@ function App() {
                 </div>
                 <div className="px-6 pb-2">
                   {project.node.languages.nodes.map((lang) => (
-                    <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
+                    <span key={lang.name} className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
                       {lang.name}
                     </span>
                   ))}
@@ -179,11 +181,7 @@ function App() {
           </div>
         )}
 
-        {/* {githubData ? (
-          
-        ) : (
-          <span>Fetching repos...</span>
-        )} */}
+
       </div>
       <Separator />
     </>
