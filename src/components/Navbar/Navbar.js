@@ -1,13 +1,11 @@
-import React, { useState } from "react";
-import { Moon, User, Briefcase, Tool, Mail, Home } from "react-feather";
+import React from "react";
+import { User, Briefcase, Home } from "react-feather";
 import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   const size = 22;
   const activeLink = "font-semibold text-violet-400";
   const normalLink = "font-semibold";
-  // const [isNavOpen, setIsNavOpen] = useState(false);
-  // const [darkMode, setDarkMode] = useState(false);
 
   return (
     <nav className="relative container mx-auto">
@@ -57,11 +55,6 @@ const Navbar = () => {
             Experience
           </NavLink>
         </div>
-
-        {/* <div>
-          <Moon size={size} />
-        </div> */}
-        {/* Hamburger icon */}
       </div>
     </nav>
   );

@@ -61,7 +61,7 @@ const SpotifyNowPlaying = () => {
 
     useEffect(() => {
         getNowPlaying()
-    }, [])
+    })
 
     return (
         <div className='flex items-center justify-center md:justify-start'>

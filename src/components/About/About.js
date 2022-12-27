@@ -146,6 +146,7 @@ const About = () => {
 
       </div>
       {/* </div> */}
+      <Separator />
     </Layout>
   );
 };

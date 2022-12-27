@@ -1,38 +1,38 @@
 import React from "react";
 import {
-    Facebook,
-    Linkedin,
-    GitHub,
-    Instagram,
-    Twitter,
-    Moon,
-    ExternalLink,
-    Sun,
-    CornerRightUp,
-    ArrowUpRight,
-  } from "react-feather";
+  Facebook,
+  Linkedin,
+  GitHub,
+  Instagram,
+  Twitter,
+  Moon,
+  ExternalLink,
+  Sun,
+  CornerRightUp,
+  ArrowUpRight,
+} from "react-feather";
 
 import { SiReact, SiTailwindcss } from 'react-icons/si'
 const Footer = () => {
-    const size = 20
+  const size = 20
   return (
     <footer className="mt-auto">
       <div className="mt-16 flex flex-col items-center">
         <div className="mb-3 flex space-x-4">
           {/* <div className="flex space-x-4"> */}
-          <a href="#">
+          <a href="https://www.twitter.com/de_coder_079" target="_blank" rel="noreferrer">
             <Twitter size={size} className="hover:text-violet-400" />
           </a>
-          <a href="#">
+          <a href="https://www.facebook.com/deepjyoti.roy.169" target="_blank" rel="noreferrer">
             <Facebook size={size} className="hover:text-violet-400" />
           </a>
-          <a href="#">
+          <a href="https://github.com/deepjyotiroy079" target="_blank" rel="noreferrer">
             <GitHub size={size} className="hover:text-violet-400" />
           </a>
-          <a href="#">
+          <a href="https://www.linkedin.com/in/deepjyoti-roy-079/" target="_blank" rel="noreferrer">
             <Linkedin size={size} className="hover:text-violet-400" />
           </a>
-          <a href="#">
+          <a href="https://www.instagram.com/de_coder_079/" target="_blank" rel="noreferrer">
             <Instagram size={size} className="hover:text-violet-400" />
           </a>
           {/* </div> */}
@@ -43,10 +43,10 @@ const Footer = () => {
           <div>{`${new Date().getFullYear()}`}</div>
           <div>{` • `}</div>
           <div>Made with </div>
-          <a href="/"><SiReact className="text-sky-300" size={size}/></a>
-          <a href="/"><SiTailwindcss className="text-sky-300" size={size}/></a>
+          <a href="/"><SiReact className="text-sky-300" size={size} /></a>
+          <a href="/"><SiTailwindcss className="text-sky-300" size={size} /></a>
         </div>
-        
+
       </div>
     </footer>
   );

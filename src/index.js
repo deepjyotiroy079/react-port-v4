@@ -7,6 +7,7 @@ import Layout from "./components/layout/Layout";
 import { BrowserRouter, Route, Router, Routes } from "react-router-dom";
 import About from "./components/About/About";
 import Experience from "./components/Experience/Experience";
+import NotFound from "./components/NotFound/NotFound";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -24,6 +25,7 @@ root.render(
         />
         <Route path="/about" element={<About />} exact />
         <Route path="/experience" element={<Experience />} exact />
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
