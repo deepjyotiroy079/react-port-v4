@@ -1,8 +1,30 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Layout from "../layout/Layout";
 import Separator from "../Separator/Separator";
 
 const Experience = () => {
+
+  // Calculating the current experience dynamically
+  const [startDate, setStartDate] = useState(new Date('2022-01-17')); // Replace with the start date of your experience
+  const [currentDate, setCurrentDate] = useState(new Date());
+  const [years, setYears] = useState(0);
+  const [months, setMonths] = useState(0);
+
+  useEffect(() => {
+    const calculateExperience = () => {
+      const diffTime = Math.abs(currentDate - startDate);
+      const diffMonths = Math.floor(diffTime / (1000 * 60 * 60 * 24 * 30.44));
+      const years = Math.floor(diffMonths / 12);
+      const months = diffMonths % 12;
+
+      setYears(years);
+      setMonths(months);
+    };
+
+    calculateExperience();
+  }, [startDate, currentDate]);
+
+
   return (
     <Layout>
       <h1 className="max-w-md text-4xl font-bold md:text-5xl text-left">
@@ -30,7 +52,9 @@ const Experience = () => {
                     <div className="mb-2 flex space-x-2 text-sm text-gray-500 dark:text-gray-400">
                       <div>Jan 2022 - Present</div>
                       <div>{` • `}</div>
-                      <div>1 yr</div>
+                      <div>
+                        {years} {years === 1 ? 'year' : 'years'}  {months} {months === 1 ? 'month' : 'months'}
+                      </div>
                     </div>
                   </time>
                   <span className="text-sm tracking-wider dark:text-gray-400">
