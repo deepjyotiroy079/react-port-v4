@@ -2,17 +2,7 @@
 // import './App.css';
 import React, { useEffect, useState } from "react";
 import {
-  Facebook,
-  Linkedin,
-  GitHub,
-  Instagram,
-  Twitter,
-  Moon,
   ExternalLink,
-  Sun,
-  CornerRightUp,
-  ArrowUpRight,
-  Download,
   DownloadCloud,
 } from "react-feather";
 import Loader from "./components/Loader/Loader";
