@@ -105,7 +105,7 @@ function App() {
           type="button"
           className="text-white bg-violet-800 hover:bg-violet-400 focus:ring-4 focus:outline-none focus:ring-violet-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-violet-600 dark:hover:bg-violet-700 dark:focus:ring-violet-800"
         >
-          <a href="https://github.com/deepjyotiroy079/react-port-v4/blob/main/resume/droy_resume_2023.pdf" target="_blank" noreferrer className="flex items-center justify-between">
+          <a href="https://raw.githubusercontent.com/deepjyotiroy079/react-port-v4/main/resume/droy_resume_2023.pdf" target="_blank" rel="noreferrer" className="flex items-center justify-between">
             Download Resume <DownloadCloud className="mx-2" size={size} />
           </a>
         </button>
