@@ -6,6 +6,7 @@ import {
   DownloadCloud,
 } from "react-feather";
 import Loader from "./components/Loader/Loader";
+// import ReactGA from 'react-ga';
 // import Navbar from "./components/Navbar/Navbar";
 import Separator from "./components/Separator/Separator";
 function App() {
@@ -43,6 +44,7 @@ function App() {
    * fetching github data using graphql api.
    */
   useEffect(() => {
+    // ReactGA.pageview(window.location.pathname + window.location.search);
     setLoading(true);
     fetch(url, {
       method: "POST",
@@ -147,7 +149,7 @@ function App() {
                       href={project.node.url}
                       target="_blank"
                       key={project.node.name}
-                      rel='noopener noreferer'
+                      rel="noopener noreferrer"
                     >
                       {project.node.name}
                       <ExternalLink size={20} />

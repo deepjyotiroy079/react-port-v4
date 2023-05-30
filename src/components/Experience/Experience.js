@@ -5,7 +5,9 @@ import Separator from "../Separator/Separator";
 const Experience = () => {
 
   // Calculating the current experience dynamically
+  // eslint-disable-next-line
   const [startDate, setStartDate] = useState(new Date('2022-01-17')); // Replace with the start date of your experience
+  // eslint-disable-next-line
   const [currentDate, setCurrentDate] = useState(new Date());
   const [years, setYears] = useState(0);
   const [months, setMonths] = useState(0);
