@@ -43,8 +43,8 @@ const Footer = () => {
           <div>{`${new Date().getFullYear()}`}</div>
           <div>{` • `}</div>
           <div>Made with </div>
-          <a href="/"><SiReact className="text-sky-300" size={size} /></a>
-          <a href="/"><SiTailwindcss className="text-sky-300" size={size} /></a>
+          <a href="https://react.dev/" target="_blank" rel="noreferrer"><SiReact className="text-sky-300" size={size} /></a>
+          <a href="https://tailwindcss.com/" target="_blank" rel="noreferrer"><SiTailwindcss className="text-sky-300" size={size} /></a>
         </div>
 
       </div>
