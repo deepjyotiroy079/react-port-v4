@@ -1,7 +1,13 @@
 // import logo from './logo.svg';
 // import './App.css';
 import React, { useEffect, useState } from "react";
+// import React from "react";
 import {
+  Facebook,
+  Linkedin,
+  GitHub,
+  Instagram,
+  Twitter,
   ExternalLink,
   DownloadCloud,
 } from "react-feather";
@@ -94,7 +100,7 @@ function App() {
         <h1 className="max-w-md text-4xl font-bold md:text-5xl text-left">
           Deepjyoti Roy
         </h1>
-        <p className="text-lg md:text-xl max-wd-sm text-gray-800 text-left">
+        <p className="font-normal md:text-xl max-wd-sm text-gray-800 text-left">
           Hi there <span>👋</span>, I'm a{" "}
           <strong>
             Software Engineer <span>👨‍💻</span>
@@ -113,7 +119,7 @@ function App() {
         </button>
       </div>
       {/* Social Icons */}
-      {/* <div className="flex space-x-4">
+      <div className="flex space-x-4">
         <a href="#">
           <Twitter size={size} className="hover:text-violet-400" />
         </a>
@@ -129,7 +135,7 @@ function App() {
         <a href="#">
           <Instagram size={size} className="hover:text-violet-400" />
         </a>
-      </div> */}
+      </div>
       <Separator />
       <div className="space-y-10">
         <h1 className="text-3xl font-bold">Highlighted Projects</h1>

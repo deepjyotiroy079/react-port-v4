@@ -3,10 +3,9 @@ import Layout from "../layout/Layout";
 import Separator from "../Separator/Separator";
 
 const Experience = () => {
-
   // Calculating the current experience dynamically
   // eslint-disable-next-line
-  const [startDate, setStartDate] = useState(new Date('2022-01-17')); // Replace with the start date of your experience
+  const [startDate, setStartDate] = useState(new Date("2022-01-17")); // Replace with the start date of your experience
   // eslint-disable-next-line
   const [currentDate, setCurrentDate] = useState(new Date());
   const [years, setYears] = useState(0);
@@ -25,7 +24,6 @@ const Experience = () => {
 
     calculateExperience();
   }, [startDate, currentDate]);
-
 
   return (
     <Layout>
@@ -48,14 +46,15 @@ const Experience = () => {
                     Deloitte Consulting India Private Limited
                   </h3>
                   <span className="text-sm tracking-wider font-bold  text-gray-500 dark:text-gray-400">
-                    DC Analyst
+                    DC Consultant
                   </span>
                   <time className="text-xs tracking-wide dark:text-gray-400">
                     <div className="mb-2 flex space-x-2 text-sm text-gray-500 dark:text-gray-400">
                       <div>Jan 2022 - Present</div>
                       <div>{` • `}</div>
                       <div>
-                        {years} {years === 1 ? 'year' : 'years'}  {months} {months === 1 ? 'month' : 'months'}
+                        {years} {years === 1 ? "year" : "years"} {months}{" "}
+                        {months === 1 ? "month" : "months"}
                       </div>
                     </div>
                   </time>
@@ -63,9 +62,11 @@ const Experience = () => {
                     Kolkata, West Bengal, India
                   </span>
                   <p className="mt-3">
-                    Currently assigned to an American nutrition and weight-loss
-                    company based in Baltimore, Maryland. Analyzing and
-                    designing ETL solutions for given problem statement.
+                    Assigned to an American nutrition and weight-loss company
+                    based in Baltimore, Maryland. Analysing and designing ETL
+                    solutions for given problem statement. Resolving bugs and
+                    developing enhancements for high priority dashboards.
+                    Creating python scripts to automate manual tasks. 
                   </p>
                 </div>
                 <div className="flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1] before:dark:bg-violet-400">
@@ -125,8 +126,10 @@ const Experience = () => {
                     Jabalpur, Madhya Pradesh, India
                   </span>
                   <p className="mt-3">
-                    Course work involved - Object Oriented Programming and Methodology, Computer Architecture,
-                    Database Management System, Cloud Computing, Computer Networking, Operating System
+                    Course work involved - Object Oriented Programming and
+                    Methodology, Computer Architecture, Database Management
+                    System, Cloud Computing, Computer Networking, Operating
+                    System
                   </p>
                 </div>
                 <div className="flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1] before:dark:bg-violet-400">

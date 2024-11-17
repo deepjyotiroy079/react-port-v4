@@ -6,6 +6,7 @@ const Navbar = () => {
   const size = 22;
   const activeLink = "font-semibold text-violet-400";
   const normalLink = "font-semibold";
+  // const normalLink = "font-normal";
 
   return (
     <nav className="relative container mx-auto">

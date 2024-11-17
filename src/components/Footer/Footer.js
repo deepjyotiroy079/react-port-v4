@@ -5,34 +5,54 @@ import {
   GitHub,
   Instagram,
   Twitter,
-  // Moon,
+  Moon,
   // ExternalLink,
   // Sun,
   // CornerRightUp,
   // ArrowUpRight,
 } from "react-feather";
 
-import { SiReact, SiTailwindcss } from 'react-icons/si'
+import { SiReact, SiTailwindcss } from "react-icons/si";
 const Footer = () => {
-  const size = 20
+  const size = 20;
   return (
     <footer className="mt-auto">
       <div className="mt-16 flex flex-col items-center">
         <div className="mb-3 flex space-x-4">
           {/* <div className="flex space-x-4"> */}
-          <a href="https://www.twitter.com/de_coder_079" target="_blank" rel="noreferrer">
+          <a
+            href="https://www.twitter.com/de_coder_079"
+            target="_blank"
+            rel="noreferrer"
+          >
             <Twitter size={size} className="hover:text-violet-400" />
           </a>
-          <a href="https://www.facebook.com/deepjyoti.roy.169" target="_blank" rel="noreferrer">
+          <a
+            href="https://www.facebook.com/deepjyoti.roy.169"
+            target="_blank"
+            rel="noreferrer"
+          >
             <Facebook size={size} className="hover:text-violet-400" />
           </a>
-          <a href="https://github.com/deepjyotiroy079" target="_blank" rel="noreferrer">
+          <a
+            href="https://github.com/deepjyotiroy079"
+            target="_blank"
+            rel="noreferrer"
+          >
             <GitHub size={size} className="hover:text-violet-400" />
           </a>
-          <a href="https://www.linkedin.com/in/deepjyoti-roy-079/" target="_blank" rel="noreferrer">
+          <a
+            href="https://www.linkedin.com/in/deepjyoti-roy-079/"
+            target="_blank"
+            rel="noreferrer"
+          >
             <Linkedin size={size} className="hover:text-violet-400" />
           </a>
-          <a href="https://www.instagram.com/de_coder_079/" target="_blank" rel="noreferrer">
+          <a
+            href="https://www.instagram.com/de_coder_079/"
+            target="_blank"
+            rel="noreferrer"
+          >
             <Instagram size={size} className="hover:text-violet-400" />
           </a>
           {/* </div> */}
@@ -43,10 +63,13 @@ const Footer = () => {
           <div>{`${new Date().getFullYear()}`}</div>
           <div>{` • `}</div>
           <div>Made with </div>
-          <a href="https://react.dev/" target="_blank" rel="noreferrer"><SiReact className="text-sky-300" size={size} /></a>
-          <a href="https://tailwindcss.com/" target="_blank" rel="noreferrer"><SiTailwindcss className="text-sky-300" size={size} /></a>
+          <a href="https://react.dev/" target="_blank" rel="noreferrer">
+            <SiReact className="text-sky-300" size={size} />
+          </a>
+          <a href="https://tailwindcss.com/" target="_blank" rel="noreferrer">
+            <SiTailwindcss className="text-sky-300" size={size} />
+          </a>
         </div>
-
       </div>
     </footer>
   );

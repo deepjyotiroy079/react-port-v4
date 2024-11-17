@@ -20,15 +20,13 @@ const About = () => {
       </h1>
       <div className="container flex flex-col-reverse justify-center mx-auto sm:py-16 lg:py-4 lg:flex-row lg:justify-between">
         <div className="flex flex-col justify-center lg:max-w-md xl:max-w-lg">
-          <p className="mt-6 text-lg sm:mb-12">
-            <strong>3 years</strong> of experience in IT industry, mostly
-            focused on <strong>ETL development and data warehousing</strong>.
-            Currently working on{" "}
-            <strong>SSIS, IICS, Microsoft SQL Server and Redshift</strong>.
-            Previously worked with <strong>Banking</strong> and{" "}
-            <strong>Media/Entertainment</strong> Clients. Strong education
-            professional with a Bachelor's of Engineering degree focused in
-            Information Technology.
+          <p className="mt-6 font-normal sm:mb-12">
+            Around 4.5 years of experience in IT industry, mostly focused on ETL
+            development and data warehousing. Currently working on SSIS, IICS,
+            Microsoft SQL Server and Redshift. Previously worked with Banking
+            and Media/Entertainment Clients. Strong education professional with
+            a Bachelor's of Engineering degree focused in Information
+            Technology.
           </p>
           {/* <h3>What I've been Listening to...</h3> */}
           <SpotifyNowPlaying />
@@ -37,7 +35,7 @@ const About = () => {
           <img
             src="/profile.jpg"
             alt=""
-            className="object-cover shadow-lg h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128"
+            className="w-72 h-72 object-cover rounded-lg sm:col-span-2 lg:col-span-full"
           />
         </div>
       </div>
@@ -143,7 +141,6 @@ const About = () => {
             </div>
           </div>
         </div>
-
       </div>
       {/* </div> */}
       <Separator />
