@@ -1,6 +1,7 @@
 import React from "react";
-import { User, Briefcase, Home } from "react-feather";
+import { User, Briefcase, Home, Settings } from "react-feather";
 import { NavLink } from "react-router-dom";
+import Toggle from "../Toggle/Toggle";
 
 const Navbar = () => {
   const size = 22;
@@ -30,7 +31,14 @@ const Navbar = () => {
           >
             <Briefcase size={size} />
           </NavLink>
+          <NavLink
+            to="/projects"
+            className={({ isActive }) => (isActive ? activeLink : normalLink)}
+          >
+            <Settings size={size} />
+          </NavLink>
         </div>
+        <Toggle />
       </div>
       <div className="hidden md:flex items-center justify-between">
         <div className="flex space-x-6">
@@ -55,7 +63,14 @@ const Navbar = () => {
           >
             Experience
           </NavLink>
+          <NavLink
+            to="/projects"
+            className={({ isActive }) => (isActive ? activeLink : normalLink)}
+          >
+            Projects
+          </NavLink>
         </div>
+        <Toggle />
       </div>
     </nav>
   );

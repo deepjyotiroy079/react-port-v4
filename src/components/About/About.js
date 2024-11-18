@@ -1,13 +1,18 @@
 import React from "react";
 import { Database } from "react-feather";
 import {
+  SiApachemaven,
+  SiApachespark,
+  SiDatabricks,
   SiDocker,
   SiGit,
   SiJava,
   SiLinux,
   SiNodedotjs,
   SiPython,
+  SiTableau,
 } from "react-icons/si";
+import { TbApi } from "react-icons/tb";
 import Layout from "../layout/Layout";
 import Separator from "../Separator/Separator";
 import SpotifyNowPlaying from "../Spotify/SpotifyNowPlaying";
@@ -137,6 +142,56 @@ const About = () => {
               <div className="hover:text-violet-400 flex items-center justify-between">
                 Docker
                 <SiDocker size={24} />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="rounded overflow-hidden border-2">
+          <div className="px-8 py-4 space-y-4">
+            <div className="font-semibold text-md mb-2">
+              <div className="hover:text-violet-400 flex items-center justify-between">
+                Databricks
+                <SiDatabricks size={24} />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="rounded overflow-hidden border-2">
+          <div className="px-8 py-4 space-y-4">
+            <div className="font-semibold text-md mb-2">
+              <div className="hover:text-violet-400 flex items-center justify-between">
+                Apache Spark
+              < SiApachespark size={24} />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="rounded overflow-hidden border-2">
+          <div className="px-8 py-4 space-y-4">
+            <div className="font-semibold text-md mb-2">
+              <div className="hover:text-violet-400 flex items-center justify-between">
+                Maven
+              <SiApachemaven size={24} />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="rounded overflow-hidden border-2">
+          <div className="px-8 py-4 space-y-4">
+            <div className="font-semibold text-md mb-2">
+              <div className="hover:text-violet-400 flex items-center justify-between">
+                Tableau
+              <SiTableau size={24} />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="rounded overflow-hidden border-2">
+          <div className="px-8 py-4 space-y-4">
+            <div className="font-semibold text-md mb-2">
+              <div className="hover:text-violet-400 flex items-center justify-between">
+                REST API
+              <TbApi size={24} />
               </div>
             </div>
           </div>

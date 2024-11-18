@@ -5,11 +5,6 @@ import {
   GitHub,
   Instagram,
   Twitter,
-  Moon,
-  // ExternalLink,
-  // Sun,
-  // CornerRightUp,
-  // ArrowUpRight,
 } from "react-feather";
 
 import { SiReact, SiTailwindcss } from "react-icons/si";

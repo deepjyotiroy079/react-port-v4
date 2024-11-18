@@ -100,7 +100,7 @@ function App() {
         <h1 className="max-w-md text-4xl font-bold md:text-5xl text-left">
           Deepjyoti Roy
         </h1>
-        <p className="font-normal md:text-xl max-wd-sm text-gray-800 text-left">
+        <p className="font-normal md:text-xl max-wd-sm text-gray-800 text-left dark:text-gray-300">
           Hi there <span>👋</span>, I'm a{" "}
           <strong>
             Software Engineer <span>👨‍💻</span>
@@ -113,26 +113,51 @@ function App() {
           type="button"
           className="text-white bg-violet-800 hover:bg-violet-400 focus:ring-4 focus:outline-none focus:ring-violet-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-violet-600 dark:hover:bg-violet-700 dark:focus:ring-violet-800"
         >
-          <a href="https://raw.githubusercontent.com/deepjyotiroy079/react-port-v4/main/resume/droy_resume_2023.pdf" target="_blank" rel="noreferrer" className="flex items-center justify-between">
+          <a
+            href="https://raw.githubusercontent.com/deepjyotiroy079/react-port-v4/main/resume/droy_resume_2023.pdf"
+            target="_blank"
+            rel="noreferrer"
+            className="flex items-center justify-between"
+          >
             Download Resume <DownloadCloud className="mx-2" size={size} />
           </a>
         </button>
       </div>
       {/* Social Icons */}
       <div className="flex space-x-4">
-        <a href="#">
+        <a
+          href="https://www.twitter.com/de_coder_079"
+          target="_blank"
+          rel="noreferrer"
+        >
           <Twitter size={size} className="hover:text-violet-400" />
         </a>
-        <a href="#">
+        <a
+          href="https://www.facebook.com/deepjyoti.roy.169"
+          target="_blank"
+          rel="noreferrer"
+        >
           <Facebook size={size} className="hover:text-violet-400" />
         </a>
-        <a href="#">
+        <a
+          href="https://github.com/deepjyotiroy079"
+          target="_blank"
+          rel="noreferrer"
+        >
           <GitHub size={size} className="hover:text-violet-400" />
         </a>
-        <a href="#">
+        <a
+          href="https://www.linkedin.com/in/deepjyoti-roy-079/"
+          target="_blank"
+          rel="noreferrer"
+        >
           <Linkedin size={size} className="hover:text-violet-400" />
         </a>
-        <a href="#">
+        <a
+          href="https://www.instagram.com/de_coder_079/"
+          target="_blank"
+          rel="noreferrer"
+        >
           <Instagram size={size} className="hover:text-violet-400" />
         </a>
       </div>
@@ -147,7 +172,7 @@ function App() {
               // console.log(project)
               // console.log(project.node.name)
 
-              <div className="rounded overflow-hidden shadow-md hover:shadow-xl hover:shadow-violet-200">
+              <div className="rounded overflow-hidden shadow-md hover:shadow-xl hover:shadow-violet-200 dark:hover:shadow-violet-800">
                 <div className="px-6 py-4 space-y-4">
                   <div className="font-bold text-xl mb-2">
                     <a
@@ -161,13 +186,16 @@ function App() {
                       <ExternalLink size={20} />
                     </a>
                   </div>
-                  <p className="text-gray-700 text-base">
+                  <p className="text-gray-700 text-base dark:text-gray-300">
                     {project.node.description}
                   </p>
                 </div>
                 <div className="px-6 pb-2">
                   {project.node.languages.nodes.map((lang) => (
-                    <span key={lang.name} className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
+                    <span
+                      key={lang.name}
+                      className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 dark:text-gray-200 dark:bg-gray-900"
+                    >
                       {lang.name}
                     </span>
                   ))}
@@ -178,8 +206,6 @@ function App() {
             ))}
           </div>
         )}
-
-
       </div>
       <Separator />
     </>

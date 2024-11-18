@@ -31,7 +31,7 @@ const Experience = () => {
         Experience
       </h1>
 
-      <section className="dark:bg-gray-800 dark:text-gray-100">
+      <section className="dark:bg-gray-800 dark:text-gray-300">
         <div className="container py-8 mx-auto">
           <div className="grid gap-4 mx-2 sm:grid-cols-12">
             <div className="col-span-12 sm:col-span-3">

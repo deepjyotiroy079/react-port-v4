@@ -8,6 +8,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import About from "./components/About/About";
 import Experience from "./components/Experience/Experience";
 import NotFound from "./components/NotFound/NotFound";
+import ComingSoon from "./components/ComingSoon/ComingSoon";
 // import ReactGA from 'react-ga';
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
@@ -28,6 +29,7 @@ root.render(
         />
         <Route path="/about" element={<About />} exact />
         <Route path="/experience" element={<Experience />} exact />
+        <Route path="/projects" element={<ComingSoon />} exact />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>
