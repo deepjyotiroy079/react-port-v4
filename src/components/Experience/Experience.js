@@ -31,17 +31,17 @@ const Experience = () => {
         Experience
       </h1>
 
-      <section className="dark:bg-gray-800 dark:text-gray-300">
+      <section>
         <div className="container py-8 mx-auto">
           <div className="grid gap-4 mx-2 sm:grid-cols-12">
             <div className="col-span-12 sm:col-span-3">
-              <div className="text-center sm:text-left mb-14 before:block before:w-24 before:h-3 before:mb-5 before:rounded-md before:mx-auto sm:before:mx-0 before:dark:bg-violet-400">
-                <h3 className="text-3xl font-bold">Career</h3>
-              </div>
+            <div className="text-center sm:text-left mb-14 before:block before:w-24 before:h-3 before:mb-5 before:rounded-md before:mx-auto sm:before:mx-0 before:dark:bg-violet-400 before:bg-violet-400">                
+              <h3 className="text-3xl font-bold">Career</h3>
+            </div>
             </div>
             <div className="relative col-span-12 space-y-6 sm:col-span-9">
-              <div className="col-span-12 space-y-12 relative sm:col-span-8 sm:space-y-8 sm:before:absolute sm:before:top-2 sm:before:bottom-0 sm:before:w-0.5 sm:before:-left-3 before:dark:bg-gray-700">
-                <div className="flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1] before:dark:bg-violet-400">
+              <div className="col-span-12 space-y-12 relative sm:col-span-8 sm:space-y-8 sm:before:absolute sm:before:top-2 sm:before:bottom-0 sm:before:w-0.5 sm:before:-left-3 before:dark:bg-gray-700 before:bg-gray-300">
+                <div className="flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1] before:dark:bg-violet-400 before:bg-violet-400">
                   <h3 className="text-xl font-bold text-violet-400 tracking-wide">
                     Deloitte Consulting India Private Limited
                   </h3>
@@ -69,7 +69,7 @@ const Experience = () => {
                     Creating python scripts to automate manual tasks. 
                   </p>
                 </div>
-                <div className="flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1] before:dark:bg-violet-400">
+                <div className="flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1] before:dark:bg-violet-400 before:bg-violet-400">
                   <h3 className="text-xl font-bold text-violet-400 tracking-wide">
                     Hexaware Technologies Limited
                   </h3>
@@ -96,17 +96,17 @@ const Experience = () => {
             </div>
           </div>
         </div>
-        <Separator />
+        {/* <Separator /> */}
         <div className="container py-8 mx-auto">
           <div className="grid gap-4 mx-2 sm:grid-cols-12">
             <div className="col-span-12 sm:col-span-3">
-              <div className="text-center sm:text-left mb-14 before:block before:w-24 before:h-3 before:mb-5 before:rounded-md before:mx-auto sm:before:mx-0 before:dark:bg-violet-400">
+              <div className="text-center sm:text-left mb-14 before:block before:w-24 before:h-3 before:mb-5 before:rounded-md before:mx-auto sm:before:mx-0 before:dark:bg-violet-400 before:bg-violet-400">
                 <h3 className="text-3xl font-bold">Education</h3>
               </div>
             </div>
             <div className="relative col-span-12 space-y-12 sm:col-span-9">
-              <div className="col-span-12 space-y-6 relative sm:col-span-8 sm:space-y-8 sm:before:absolute sm:before:top-2 sm:before:bottom-0 sm:before:w-0.5 sm:before:-left-3 before:dark:bg-gray-700">
-                <div className="flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1] before:dark:bg-violet-400">
+              <div className="col-span-12 space-y-6 relative sm:col-span-8 sm:space-y-8 sm:before:absolute sm:before:top-2 sm:before:bottom-0 sm:before:w-0.5 sm:before:-left-3 before:dark:bg-gray-700 before:bg-gray-300">
+                <div className="flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1] before:dark:bg-violet-400 before:bg-violet-400">
                   <h3 className="text-xl text-violet-400  font-bold tracking-wide">
                     Gyan Ganga Institute of Technology and Sciences
                   </h3>
@@ -132,7 +132,7 @@ const Experience = () => {
                     System
                   </p>
                 </div>
-                <div className="flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1] before:dark:bg-violet-400">
+                <div className="flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1] before:dark:bg-violet-400 before:bg-violet-400">
                   <h3 className="text-xl text-violet-400  font-bold tracking-wide">
                     St. Gabriel's Senior Secondary School
                   </h3>

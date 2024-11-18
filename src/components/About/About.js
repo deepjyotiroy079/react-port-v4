@@ -70,7 +70,7 @@ const About = () => {
         </p>
       </div> */}
       {/* <section className=""></section> */}
-      <Separator />
+      {/* <Separator /> */}
       <h1 className="mt-1 text-xl font-semibold md:text-2xl">
         Technologies I've worked on
       </h1>
@@ -161,7 +161,7 @@ const About = () => {
             <div className="font-semibold text-md mb-2">
               <div className="hover:text-violet-400 flex items-center justify-between">
                 Apache Spark
-              < SiApachespark size={24} />
+                <SiApachespark size={24} />
               </div>
             </div>
           </div>
@@ -171,7 +171,7 @@ const About = () => {
             <div className="font-semibold text-md mb-2">
               <div className="hover:text-violet-400 flex items-center justify-between">
                 Maven
-              <SiApachemaven size={24} />
+                <SiApachemaven size={24} />
               </div>
             </div>
           </div>
@@ -181,7 +181,7 @@ const About = () => {
             <div className="font-semibold text-md mb-2">
               <div className="hover:text-violet-400 flex items-center justify-between">
                 Tableau
-              <SiTableau size={24} />
+                <SiTableau size={24} />
               </div>
             </div>
           </div>
@@ -191,7 +191,7 @@ const About = () => {
             <div className="font-semibold text-md mb-2">
               <div className="hover:text-violet-400 flex items-center justify-between">
                 REST API
-              <TbApi size={24} />
+                <TbApi size={24} />
               </div>
             </div>
           </div>
