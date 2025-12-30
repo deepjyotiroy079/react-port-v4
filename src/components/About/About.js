@@ -26,7 +26,7 @@ const About = () => {
       <div className="container flex flex-col-reverse justify-center mx-auto sm:py-16 lg:py-4 lg:flex-row lg:justify-between">
         <div className="flex flex-col justify-center lg:max-w-md xl:max-w-lg">
           <p className="mt-6 font-normal sm:mb-12">
-            Around 4.5 years of experience in IT industry, mostly focused on ETL
+            Around 6 years of experience in IT industry, mostly focused on ETL
             development and data warehousing. Currently working on SSIS, IICS,
             Microsoft SQL Server and Redshift. Previously worked with Banking
             and Media/Entertainment Clients. Strong education professional with
